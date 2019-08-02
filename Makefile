@@ -5,7 +5,7 @@ export
 
 .PHONY: dev e2e e2e-interactive clean
 
-DEV_DC = docker-compose -f docker-compose.yml
+DEV_DC = docker-compose
 
 dev:
 	$(DEV_DC) up --build
