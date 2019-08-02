@@ -7,7 +7,9 @@ jobs:
       - checkout
       - run:
           command: |
-            cd app
+            git clone git@github.com:qaiken/cypress-demo-api.git ../cypress-demo-api
+      - run:
+          command: |
             make e2e
 
 workflows:

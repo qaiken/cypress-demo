@@ -15,12 +15,12 @@ services:
       - api
   api:
     build:
-      context: ../api
+      context: ../cypress-demo-api
     environment:
       - PORT=8080
     ports:
       - 8080:8080
     volumes:
       # share everything BUT node_modules from the host
-      - ../api:/api
+      - ../cypress-demo-api:/api
       - /api/node_modules
